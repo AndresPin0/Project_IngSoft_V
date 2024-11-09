@@ -9,10 +9,10 @@ clients:
   - url: http://loki:3100/loki/api/v1/push
 
 scrape_configs:
-  - job_name: system
+  - job_name: spring-boot-app
     static_configs:
       - targets:
           - localhost
         labels:
-          job: varlogs
-          __path__: /var/log/*log
+          job: spring-boot-app
+          __path__: /Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project/demo/logs

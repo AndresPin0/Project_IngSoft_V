@@ -1,0 +1,4 @@
+2024-11-08T22:57:14.087-05:00  INFO 8982 --- [demo] [Test worker] com.example.demo.DemoApplicationTests    : Starting DemoApplicationTests using Java 17.0.11 with PID 8982 (started by andres in /Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project/demo)
+2024-11-08T22:57:14.088-05:00  INFO 8982 --- [demo] [Test worker] com.example.demo.DemoApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-11-08T22:57:15.009-05:00  INFO 8982 --- [demo] [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-11-08T22:57:15.056-05:00  INFO 8982 --- [demo] [Test worker] com.example.demo.DemoApplicationTests    : Started DemoApplicationTests in 1.12 seconds (process running for 1.779)
