@@ -30,8 +30,9 @@ services:
   promtail:
     image: grafana/promtail:latest
     volumes:
-      - /Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project/demo/logs
+      - /var/log:/var/log
       - ./promtail/config.yml:/etc/promtail/config.yml
+      - /Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project/demo/logs
     command: -config.file=/etc/promtail/config.yml
 
 volumes:

@@ -2,3 +2,16 @@
 2024-11-08T22:57:14.088-05:00  INFO 8982 --- [demo] [Test worker] com.example.demo.DemoApplicationTests    : No active profile set, falling back to 1 default profile: "default"
 2024-11-08T22:57:15.009-05:00  INFO 8982 --- [demo] [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
 2024-11-08T22:57:15.056-05:00  INFO 8982 --- [demo] [Test worker] com.example.demo.DemoApplicationTests    : Started DemoApplicationTests in 1.12 seconds (process running for 1.779)
+2024-11-08T23:13:45.329-05:00  INFO 9432 --- [demo] [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.11 with PID 9432 (/Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project/demo/build/classes/java/main started by andres in /Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project/demo)
+2024-11-08T23:13:45.331-05:00  INFO 9432 --- [demo] [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-11-08T23:13:45.982-05:00  INFO 9432 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-08T23:13:45.992-05:00  INFO 9432 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-08T23:13:45.993-05:00  INFO 9432 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-08T23:13:46.034-05:00  INFO 9432 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-08T23:13:46.034-05:00  INFO 9432 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 675 ms
+2024-11-08T23:13:46.358-05:00  INFO 9432 --- [demo] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-11-08T23:13:46.409-05:00  INFO 9432 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-08T23:13:46.422-05:00  INFO 9432 --- [demo] [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.354 seconds (process running for 1.609)
+2024-11-08T23:13:57.122-05:00  INFO 9432 --- [demo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-08T23:13:57.123-05:00  INFO 9432 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-08T23:13:57.126-05:00  INFO 9432 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
