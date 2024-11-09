@@ -13,4 +13,4 @@ scrape_configs:
       - targets: ['localhost']
         labels:
           job: spring-boot-app
-          __path__: /Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project/demo/logs
+          __path__: /demo/logs/application.log

@@ -15,3 +15,42 @@
 2024-11-08T23:13:57.122-05:00  INFO 9432 --- [demo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-11-08T23:13:57.123-05:00  INFO 9432 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2024-11-08T23:13:57.126-05:00  INFO 9432 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-08T23:26:11.815-05:00  INFO 9772 --- [demo] [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.11 with PID 9772 (/Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project/demo/build/classes/java/main started by andres in /Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project/demo)
+2024-11-08T23:26:11.816-05:00  INFO 9772 --- [demo] [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-11-08T23:26:12.514-05:00  INFO 9772 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-08T23:26:12.523-05:00  INFO 9772 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-08T23:26:12.523-05:00  INFO 9772 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-08T23:26:12.567-05:00  INFO 9772 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-08T23:26:12.567-05:00  INFO 9772 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 719 ms
+2024-11-08T23:26:12.931-05:00  INFO 9772 --- [demo] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-11-08T23:26:12.964-05:00  WARN 9772 --- [demo] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-11-08T23:26:12.982-05:00  INFO 9772 --- [demo] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-08T23:26:12.992-05:00 ERROR 9772 --- [demo] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-11-08T23:26:42.136-05:00  INFO 9795 --- [demo] [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.11 with PID 9795 (/Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project/demo/build/classes/java/main started by andres in /Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project/demo)
+2024-11-08T23:26:42.138-05:00  INFO 9795 --- [demo] [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-11-08T23:26:42.853-05:00  INFO 9795 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-08T23:26:42.865-05:00  INFO 9795 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-08T23:26:42.866-05:00  INFO 9795 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-08T23:26:42.916-05:00  INFO 9795 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-08T23:26:42.916-05:00  INFO 9795 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 750 ms
+2024-11-08T23:26:43.307-05:00  INFO 9795 --- [demo] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-11-08T23:26:43.356-05:00  INFO 9795 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-08T23:26:43.370-05:00  INFO 9795 --- [demo] [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.506 seconds (process running for 2.021)
+2024-11-08T23:26:43.714-05:00  INFO 9795 --- [demo] [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-08T23:26:43.714-05:00  INFO 9795 --- [demo] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-08T23:26:43.715-05:00  INFO 9795 --- [demo] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
