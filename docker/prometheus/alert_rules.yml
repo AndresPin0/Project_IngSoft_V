@@ -49,3 +49,16 @@ groups:
         annotations:
           summary: "Esta alerta siempre está activa"
           description: "Esta es una alerta de prueba que siempre está activa para verificar la configuración de alertas."
+
+      - alert: HighErrorRate
+        expr: |
+          sum(rate(api_errors_total[1m])) / sum(rate(api_requests_total[1m])) > 0.05
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Alta tasa de errores en la aplicación"
+          description: "La tasa de errores supera el 5% en los últimos 1 minuto."
+
+
+
