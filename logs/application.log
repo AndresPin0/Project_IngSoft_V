@@ -1,0 +1,26 @@
+2024-11-30T08:48:11.899-05:00  INFO 4011 --- [demo] [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.11 with PID 4011 (/Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project/demo/build/classes/java/main started by andres in /Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project)
+2024-11-30T08:48:11.902-05:00  INFO 4011 --- [demo] [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-11-30T08:48:12.433-05:00  INFO 4011 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-30T08:48:12.440-05:00  INFO 4011 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-30T08:48:12.440-05:00  INFO 4011 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-30T08:48:12.473-05:00  INFO 4011 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-30T08:48:12.473-05:00  INFO 4011 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 550 ms
+2024-11-30T08:48:12.752-05:00  INFO 4011 --- [demo] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-11-30T08:48:12.786-05:00  INFO 4011 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-30T08:48:12.796-05:00  INFO 4011 --- [demo] [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.136 seconds (process running for 1.549)
+2024-11-30T08:48:13.229-05:00  INFO 4011 --- [demo] [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-30T08:48:13.229-05:00  INFO 4011 --- [demo] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-30T08:48:13.230-05:00  INFO 4011 --- [demo] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-30T08:55:35.269-05:00  INFO 4109 --- [demo] [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.11 with PID 4109 (/Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project/demo/build/classes/java/main started by andres in /Users/andres/Desktop/Universidad/IngSoft_5/monitoring-project)
+2024-11-30T08:55:35.271-05:00  INFO 4109 --- [demo] [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-11-30T08:55:35.758-05:00  INFO 4109 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-30T08:55:35.765-05:00  INFO 4109 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-30T08:55:35.765-05:00  INFO 4109 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-30T08:55:35.844-05:00  INFO 4109 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-30T08:55:35.844-05:00  INFO 4109 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 552 ms
+2024-11-30T08:55:36.230-05:00  INFO 4109 --- [demo] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-11-30T08:55:36.262-05:00  INFO 4109 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-30T08:55:36.272-05:00  INFO 4109 --- [demo] [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.211 seconds (process running for 1.54)
+2024-11-30T08:55:36.522-05:00  INFO 4109 --- [demo] [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-30T08:55:36.522-05:00  INFO 4109 --- [demo] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-30T08:55:36.523-05:00  INFO 4109 --- [demo] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

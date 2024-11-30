@@ -1,0 +1,11 @@
+groups:
+  - name: always_firing
+    rules:
+      - alert: AlwaysFiring
+        expr: vector(1)
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Esta alerta siempre está activa"
+          description: "Esta es una alerta de prueba que siempre está activa para verificar la configuración de alertas."

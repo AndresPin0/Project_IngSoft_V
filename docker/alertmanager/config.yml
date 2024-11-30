@@ -1,0 +1,27 @@
+global:
+  resolve_timeout: 5m
+  smtp_smarthost: 'smtp.gmail.com:587'
+  smtp_from: 'pinoa734@gmail.com'
+  smtp_auth_username: 'pinoa734@gmail.com
+  smtp_auth_password: 'qowy yoef rick dvrr'
+  smtp_require_tls: true
+
+
+route:
+  group_by: ['alertname']
+  group_wait: 10s
+  group_interval: 10m
+  repeat_interval: 1h
+  receiver: 'default-receiver'
+
+receivers:
+  - name: 'default-receiver'
+    email_configs:
+      - to: 'pinoandres85@gmail.com'
+
+inhibit_rules:
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'instance']
