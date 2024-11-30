@@ -1,6 +1,17 @@
-version: '3.8'
+version: '3.9'
 
 services:
+  curriculum-app:
+    build:
+      context: ../demo
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - .logs:/logs
+    depends_on:
+      - prometheus
+
   grafana:
     image: grafana/grafana:latest
     ports:
@@ -50,6 +61,7 @@ services:
       - "3100:3100"
     volumes:
       - ./loki/local-config.yaml:/etc/loki/local-config.yml
+
   promtail:
     image: grafana/promtail:latest
     volumes:

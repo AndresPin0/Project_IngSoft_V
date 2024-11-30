@@ -1,6 +1,46 @@
 groups:
-  - name: always_firing
+  - name: application_alerts
     rules:
+      - alert: HighLatency
+        expr: |
+          histogram_quantile(0.95, sum(rate(http_server_requests_seconds_bucket{job="spring-boot-app"}[5m])) by (le, method, uri)) > 0.5
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Alta latencia en endpoint {{ $labels.method }} {{ $labels.uri }}"
+          description: "La latencia p95 en el endpoint {{ $labels.method }} {{ $labels.uri }} es mayor que 0.5s"
+
+      - alert: HighCPUUsage
+        expr: |
+          100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[1m])) * 100) > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Alto uso de CPU en {{ $labels.instance }}"
+          description: "El uso de CPU es mayor al 80% en {{ $labels.instance }}"
+
+      - alert: HighJVMHeapMemoryUsage
+        expr: |
+          (sum(jvm_memory_used_bytes{area="heap", job="spring-boot-app"}) / sum(jvm_memory_max_bytes{area="heap", job="spring-boot-app"})) * 100 > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Alto uso de memoria JVM en {{ $labels.instance }}"
+          description: "El uso de memoria heap de la JVM es mayor al 80% en {{ $labels.instance }}"
+
+      - alert: HighErrorRate
+        expr: |
+          sum(rate(http_server_requests_seconds_count{status=~"5..", job="spring-boot-app"}[1m])) by (instance) / sum(rate(http_server_requests_seconds_count{job="spring-boot-app"}[1m])) by (instance) > 0.05
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Alta tasa de errores en {{ $labels.instance }}"
+          description: "La tasa de errores 5xx supera el 5% en {{ $labels.instance }}"
+
       - alert: AlwaysFiring
         expr: vector(1)
         for: 1m
